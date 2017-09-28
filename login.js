@@ -6,25 +6,78 @@ Brief  This file provides a two-step verification password
        for logging into this profile on the website.
 */
 
-var myName = "";
 var myPassword = "";
+var verPassword = "";
+
+var imageArray = [];
+var currentIndex = 0;
 
 function login()
 {
-	//
 	alert("Program Running");
 }
 
-function Submit(name, password)
+function Submission()
 {
-	myName = name;
-	myPassword = password;
+	myPassword = document.getElementById("pass").value;
+	verPassword = document.getElementById("verPass").value;
 
-	Verify();
+	if(myPassword.length < 8 || verPassword.length < 8)
+	{
+		alert("Re-enter A Passowrd length 8 or Greater");
+	}
+	else
+	{
+		if(myPassword == verPassword)
+		{
+			alert("Your Passwords Match!");
+		}
+		else
+		{
+			alert("Passwords Are Not A Match.");
+		}
+	}
 }
 
-function Verify()
+function GetImages()
 {
-	//run something in the html
-	alert("Successsssss");
+	//runs onload
+	//imageArray.push(document.getElementById("image0"));
+	imageArray.push("0.jpg");
+	imageArray.push("1.png");
+	imageArray.push("2.png");
+	imageArray.push("3.png");
+	imageArray.push("4.png");
+	
+	SetCurrentImage();
+}
+
+function PreviousImage()
+{
+	alert("Running PreviousImage");
+	currentIndex --;
+	
+	if(currentIndex < 0)
+	{
+		currentIndex = 4;
+	}
+	
+	SetCurrentImage();
+}
+
+function NextImage()
+{
+	currentIndex ++;
+	
+	if(currentIndex > 4)
+	{
+		currentIndex = 0;
+	}
+	
+	SetCurrentImage();
+}
+
+function SetCurrentImage()
+{
+	document.getElementById("image0").src = "slideshow-imgs\\" + imageArray[currentIndex];
 }
