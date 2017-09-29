@@ -7,7 +7,10 @@
 
 <html>
 	<head>
-		<title>Art Slideshow</title>
+		<title>Austin Irvine</title>
+		<link href="profile.css"
+            rel="stylesheet"
+            type="text/css">
 			
 		<script type="text/javascript"
 			 src="login.js">
@@ -15,14 +18,33 @@
 	</head>
 		
 	<body>
-		<center> 
-		<input id="Back" type="button" value="Back" onclick ="PreviousImage()">
-		<img src=".\slideshow-imgs\0.jpg" id="image0" width="200" height="200" onload = "GetImages()">
-		<input id="Next" type="button" value="Next" onclick ="NextImage()">
-		<br/>		
-		- My Art -
-		<br/>  
-		</center>
+		<div class = "MyImage"> <img src=".\profile-imgs\0.jpg" id="image0" width="200" height="260"> </div>
+		<div class = "ShortIntro"> This is Austin Irvine. <p> He is a junior studying Computer Science and Physics</p>
+								   <br/>
+								   <p>Here are some of my favorite websites:</p>
+		</div>
+		<div class = "LongStory"> <p>Austin was born in Topeka, KS in 1997.  Austin has a wide range of goals varying from 
+								  changing the world to terraforming other worlds.  Austin love space, adventure, and all
+								  things that involve computing.  From laying on beds of nails, to drinking butter in the mornings,
+								  Austin makes his world efficient and productive.  He uses new devices constantly to improve
+								  mental and physical performance.  He is quoted as saying, "Sometimes the light from new spectrums,
+								  allows my mind to be enlightened."</p>
+								  <p>Austin is also a local TEDx Organizer and the Licensee of TEDxKU.  He strives to not only make
+								  his imagination come true, but enjoys seeing the worlds of others come to fruition.</p></div>
+		<div class = "Youtube"> <p>My Favorite Song</p> <iframe width="560" height="315" src="https://www.youtube.com/embed/3_MRe3JwFc8"
+								frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class = "Menu"> <input id="mainMenu" type="button" value="Main Menu" onclick ="location.href='menu.html'"> </div>
+		<div class = "Links"> <br/> <br/> <a href="http://www.austinirvine.com/"> My Website </a>
+									<br/> <a href="https://www.linkedin.com/in/austinirvine/"> My LinkedIn </a>
+									<br/> <a href="https://www.github.com/austinirvine/"> My GitHub </a>
+		</div>
+		<br/><br>
+		
+	</body>
+		
+	<body>
+		
 	</body>
 	
 </html>

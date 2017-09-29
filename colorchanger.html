@@ -1,28 +1,56 @@
 <!--
 #Author Austin Irvine
 #Date   Sept. 22, 2017
-#File   slideshow.html
-#Brief  This website shows cool images in a slideshow
+#File   colorchanger.html
+#Brief  This website changes color
 -->
 
 <html>
 	<head>
-		<title>Art Slideshow</title>
-			
+		<title>CSS Example</title>
+		
+		<link href="cssStyleChanger.css"
+            rel="stylesheet"
+            type="text/css">
+		
 		<script type="text/javascript"
 			 src="login.js">
 		 </script>		
 	</head>
 		
 	<body>
-		<center> 
-		<input id="Back" type="button" value="Back" onclick ="PreviousImage()">
-		<img src=".\slideshow-imgs\0.jpg" id="image0" width="200" height="200" onload = "GetImages()">
-		<input id="Next" type="button" value="Next" onclick ="NextImage()">
-		<br/>		
-		- My Art -
-		<br/>  
-		</center>
+		
+		<input id="mainMenu" type="button" value="Main Menu" onclick ="location.href='menu.html'">
+		
+		<form id="form1">
+			<p class = "text1" id = "text1" style="background-color:red"> This text is just here to make everyone a little happier!!! I love the world. *NOTE* Using 0-255 for the colors...</p>
+			<br/><br>
+			<br/>		
+			<p>*- CSS Style Changer -*</p> <br/>
+			
+			Border<br/>
+			Red:<br>
+			<input id = "redBor" type = "text" name = "Red"><br>
+			Green:<br>
+			<input id = "greenBor" type = "text" name = "Green"><br>
+			Blue:<br>
+			<input id = "blueBor" type = "text" name = "Blue"><br>
+			Width:<br>
+			<input id = "widthBor" type = "text" name = "Width"><br>
+			<br>
+			Background<br/>
+			Red:<br>
+			<input id = "redBack" type = "text" name = "Red"><br>
+			Green:<br>
+			<input id = "greenBack" type = "text" name = "Green"><br>
+			Blue:<br>
+			<input id = "blueBack" type = "text" name = "Blue"><br>
+			<br>
+			
+			<input id = "ArtSubmit" type ="button" value="Art Submit" onclick = "SubmitArtChange();">
+			<br><br>
+			<input id="mainMenu" type="button" value="Main Menu" onclick ="location.href='menu.html'">
+		</form>
 	</body>
 	
 </html>

@@ -31,12 +31,39 @@ function Submission()
 		if(myPassword == verPassword)
 		{
 			alert("Your Passwords Match!");
+			window.location = "menu.html";
 		}
 		else
 		{
 			alert("Passwords Are Not A Match.");
 		}
 	}
+}
+
+function SubmitArtChange()
+{
+	var form1 = document.getElementById("form1").style;
+	var text1 = document.getElementById("text1").style;
+	var redBor = document.getElementById("redBor").value;
+	var greenBor = document.getElementById("greenBor").value;
+	var blueBor = document.getElementById("blueBor").value;
+	var widthBor = document.getElementById("widthBor").value;
+	
+	var redBack = document.getElementById("redBack").value;
+	var greenBack = document.getElementById("greenBack").value;
+	var blueBack = document.getElementById("blueBack").value;
+	
+	text1.borderColor = rgb(redBor, greenBor, blueBor);
+	text1.borderWidth = widthBor;
+	
+	alert("Here it is: "+widthBor);
+	
+	text1.backgroundColor = rgb(redBack, greenBack, blueBack);
+}
+
+function rgb(r, g, b)
+{
+	return "rgb("+r+","+g+","+b+")";
 }
 
 function GetImages()

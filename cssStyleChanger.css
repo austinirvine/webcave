@@ -1,0 +1,9 @@
+p.text1
+{
+    background-color: black;
+	color: gray;
+	
+	width: 200px;
+	height:100px;
+	border: 2px solid white;
+}

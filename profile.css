@@ -1,0 +1,113 @@
+body
+{
+    background-image: url(./slideshow-imgs/2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	background-color: black;
+	color: white;
+}
+
+div.MyImage
+{
+	position: absolute;
+	background-image: url(./profile-imgs/0.jpg);
+	
+	left: 10px;
+	top: 10px;
+	
+	width: 200px;
+	height: 260px;
+	border: 3px solid white;
+}
+
+div.MyImage:hover
+{
+	position: absolute;
+	background-image: url(./profile-imgs/1.jpg);
+	
+	left: 10px;
+	top: 10px;
+	
+	width: 200px;
+	height: 260px;
+	border: 3px solid white;
+}
+
+div.ShortIntro
+{
+    position: absolute;
+    
+	left: 10px;
+	top: 280px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 2px solid white;
+	
+    color: white;
+    font-family: georgian
+    font-size: 18pt;
+}
+
+div.LongStory
+{
+    position: absolute;
+    
+	left: 250px;
+	top: 40px;
+    right: 5;
+    width: 800px;
+    height: 200px;
+    border: 3px solid white;
+	
+    color: white;
+    font-family: georgian
+    font-size: 18pt;
+}
+
+div.Youtube
+{
+    position: absolute;
+	
+	left: 250px;
+	top: 280px;
+    right: 5;
+
+}
+
+div.Links
+{
+    position: absolute;
+    
+	left: 10px;
+	top: 400px;
+    right: 0;
+    width: 200px;
+    height: 120px;
+    border: 2px solid white;
+	
+    color: white;
+    font-family: georgian
+    font-size: 18pt;
+}
+
+div.Links:hover
+{
+    color: white;
+}
+
+div.Menu
+{
+	position: absolute;
+    
+	left: 10px;
+	top: 530px;
+}
+
+div.Menu:hover
+{
+	background-color: green;
+	button-color: green;
+}
